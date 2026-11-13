@@ -209,3 +209,82 @@ a:focus-visible {
 .btn:focus-visible {
   border-radius: 999px;
 }
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(251,251,249,.88);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 66px;
+  gap: 24px;
+}
+
+.logo {
+  display: flex;
+  flex: none;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 28px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.nav-list a {
+  padding: 6px 2px;
+  border-bottom: 1px solid transparent;
+  transition: color .2s;
+}
+
+.nav-list a:hover {
+  color: var(--ink);
+  border-bottom-color: currentColor;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: none;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 13px;
+  color: var(--muted);
+  transition: background .2s, border-color .2s;
+}
+
+.pill:hover {
+  background: #f1f0ea;
+  border-color: #cfcdc4;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e0457b;
+  flex: none;
+}

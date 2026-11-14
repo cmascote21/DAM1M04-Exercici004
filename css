@@ -732,3 +732,79 @@ a:focus-visible {
 .footer-links a:hover {color: #fff;border-bottom-color: currentColor;}
 .copy { flex: 1 1 0; text-align: right; font-size: 15px;}
 .site-footer a:focus-visible { outline-color: #8fb4f5;}
+
+@media (max-width: 767px) {
+  .container { padding: 0 20px; }
+  .section { padding: 64px 0; }
+  h2 { font-size: 32px; }
+  .h-big { font-size: 40px; }
+  .lead { font-size: 18px; }
+
+  .nav, .pill-event { display: none; }
+  .header-inner { height: 62px; }
+
+  .hero { padding-top: 56px; min-height: 0; }
+  .hero-symbol { width: 44px; height: auto; margin-bottom: 26px; }
+  .hero h1 { font-size: 42px; letter-spacing: -0.045em; }
+  .hero-lead { font-size: 18px; margin-top: 28px; }
+  .actions { margin-top: 32px; gap: 14px; }
+  .btn { padding: 14px 22px; font-size: 15px; }
+  .shot-hero { margin-top: 84px; height: 120px; border-radius: 8px 8px 0 0; }
+  .shot-atlas { margin-top: 44px; height: 220px; }
+
+  .card { flex-basis: 100%; min-height: 0; padding: 32px 28px; }
+  .card-title { font-size: 26px; }
+  .core { flex-direction: column; align-items: flex-start; gap: 16px; padding: 28px; }
+  .core .card-title { flex: none; }
+
+  .message { padding: 64px 0; }
+  .message-main, .message-sub { font-size: 24px; }
+
+  .panel { padding: 24px 22px; margin-top: 36px; }
+  .panel-head { flex-direction: column; }
+  .metric-num { font-size: 58px; }
+  .unit { font-size: 30px; }
+
+  .field { padding: 72px 0; }
+  .field-num { font-size: 80px; }
+  .field-text { font-size: 16px; margin-top: 32px; }
+  .field-note { margin-top: 32px; }
+  .datasheet { flex-basis: 100%; padding: 24px 22px 12px; }
+
+  .wf-list { margin-top: 40px; }
+  .wf { flex-direction: column; gap: 14px; padding: 28px 0; }
+  .wf-tag, .wf-sub .wf-tag { flex: none; padding: 0; }
+  .wf-sub { padding-left: 16px; padding-right: 8px; }
+  .wf-body h3 { font-size: 22px; margin-bottom: 10px; }
+  .wf-arrow { display: none; }
+
+  .steps { gap: 28px; margin-top: 44px; }
+  .steps li { flex-basis: 100%; }
+  .atlas-intro { margin-top: 44px; }
+  .atlas-demo { margin-top: 36px; gap: 32px; }
+  .ask { flex-basis: 100%; }
+  .nodes { flex-basis: 100%; max-width: none; }
+  .ask-text { font-size: 15px; }
+
+  .gov { flex-basis: 100%; min-height: 0; }
+  .gov p { max-width: none; }
+  .run { flex-direction: column; gap: 28px; margin-top: 44px; }
+  .run li { flex-basis: auto; padding-right: 0; }
+  .guarantees { flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+  .guarantees li + li::before { display: none; }
+
+  .start { padding: 80px 0 48px; }
+  .start .lead { font-size: 18px; }
+  .trust { margin-top: 56px; }
+  .trust li, .trust li + li { flex-basis: 100%; padding: 24px 0; border-bottom: 1px solid rgba(0,0,0,.09); }
+  .trust li + li::before { display: none; }
+  .trust li:last-child { border-bottom: 0; }
+
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .footer-logo, .copy { flex: none; text-align: left; }
+  .footer-links { flex-wrap: wrap; gap: 8px 22px; }
+}
+
+@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+  .hero-graph { display: none !important; }
+}

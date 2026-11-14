@@ -288,3 +288,61 @@ a:focus-visible {
   background: #e0457b;
   flex: none;
 }
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 80% 15%, #f3dce8, transparent 60%),
+    radial-gradient(ellipse at 60% 0%, #fae6d1, transparent 55%),
+    #fbfbfa;
+  padding: 100px 0 0;
+  min-height: 720px;
+}
+
+.hero-graph {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse, #000 60%, transparent 100%);
+}
+
+.hero-graph canvas {
+  display: block;
+  background: transparent;
+  pointer-events: none;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-symbol {
+  margin-bottom: 38px;
+}
+
+.hero h1 {
+  font-size: 96px;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+  max-width: 9.5em;
+}
+
+.hero-lead {
+  font-size: 24px;
+  line-height: 1.55;
+  color: var(--muted);
+  max-width: 34em;
+  margin-top: 42px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 44px;
+}

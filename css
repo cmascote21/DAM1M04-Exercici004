@@ -650,3 +650,40 @@ a:focus-visible {
 .wf-sub:hover { background: linear-gradient(90deg, #ebeae5 0%, rgba(239,238,234,.3) 45%);}
 .wf-sub .wf-tag {padding-left: 48px; flex-basis: 288px;}
 .wf-sub .wf-body h3 {font-size: 20px;}
+
+.steps { display: flex;flex-wrap: wrap; gap: 40px;margin-top: 72px;}
+.steps li {flex: 1 1 200px;border-top: 2px solid var(--ink); padding-top: 22px;}
+
+.steps h3 {font-size: 26px;letter-spacing: -0.02em;margin-bottom: 12px;}
+.steps p {font-size: 15.5px; line-height: 1.55;color: var(--muted);}
+
+.atlas-intro { font-size: 20px;color: var(--ink);max-width: 28em;margin-top: 64px;}
+
+.atlas-demo {display: flex;flex-wrap: wrap;gap: 40px 56px;margin-top: 56px;align-items: flex-start;}
+
+.ask {flex: 1 1 400px;max-width: 622px;display: flex;align-items: center;gap: 12px;padding: 16px 16px 16px 20px;background: #fff;
+  border: 1px solid #cfcfd4;border-radius: 12px;box-shadow: 0 2px 6px rgba(0,0,0,.08), inset 0 0 0 1px rgba(255,255,255,.8);}
+
+.ask-icon {flex: none;color: var(--muted);opacity: .75;}
+.ask-text {flex: 1;font-size: 17px;}
+.caret {display: inline-block; width: 2px;height: 1.1em;background: var(--ink);vertical-align: text-bottom;margin-left: 2px;}
+
+.ask .btn {background: #26272b;border-radius: 6px;padding: 10px 16px;font-size: 14px;}
+
+.nodes {flex: 1 1 420px;max-width: 460px;}
+
+.nodes-title {margin-bottom: 14px;}
+
+.nodes-row {display: flex;flex-wrap: wrap;gap: 12px;}
+
+.node {flex: 1 1 190px;padding: 18px 18px 16px;border: 1px solid #b9d9bf;border-radius: 10px;background: #fcfdfb;}
+
+.node p {font-size: 15px;line-height: 1.45;margin-bottom: 12px;}
+
+.node-tag {display: flex;align-items: flex-start;gap: 8px;color: #46484f;font-size: 11px;margin-bottom: 12px;}
+
+.dot-green {flex: none;width: 8px;height: 8px;margin-top: 3px;border-radius: 50%;background: #3f8f52;}
+
+.node-ok {display: flex;align-items: center;gap: 8px;margin: 0 !important;font-size: 13px !important;color: #3f8f52;}
+
+.node-ok svg {flex: none;}
